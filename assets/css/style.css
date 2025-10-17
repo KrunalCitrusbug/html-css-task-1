@@ -1,0 +1,189 @@
+/* ==== Basic Reset ==== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== Global Variables ==== */
+:root {
+  --primary-color: #183C59;
+  --primary-hover: #0056b3;
+  --secondary-color: #222;
+  --background-color: #f9f9f9;
+  --text-color: #252B42;
+  --font-family: 'DM Sans';
+  --font-size-base: 16px;
+  --line-height: 1.5;
+  --spacing-unit: 16px;
+  --border-radius: 5px;
+}
+
+/* ==== Global Styles ==== */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* ==== Fonts Setup ==== */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DMSans-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DMSans-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DMSans-Italic.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Ensure common elements explicitly use the configured font and sensible fallbacks */
+h1, h2, h3, h4, h5, h6, button, .btn {
+  font-family: var(--font-family);
+}
+
+/* ==== Main Container ==== */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==== Header ==== */
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;  
+  text-align: center;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: var(--background-color);
+  color: #fff;
+}
+#header-logo{
+  width: 240.4456787109375;
+  height: 60;
+  opacity: 1;
+  top: 33px;
+  left: 96px;
+
+}
+#header-btn{
+  width: 148px;
+  height: 61px;
+  opacity: 1;
+  top: 33px;
+  left: 1197px;
+  border: 1px solid #173B58;
+  border-radius: 56px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  gap: 8px;
+}
+
+/* ==== Hero / Content ==== */
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-unit);
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-unit);
+}
+
+.hero p {
+  margin-bottom: var(--spacing-unit);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* ==== Footer ==== */
+.footer {
+  text-align: center;
+  padding: var(--spacing-unit);
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* ==== Utility Classes ==== */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: var(--spacing-unit * 2);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-unit * 2);
+}
+
+/* ==== Media Queries ==== */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
