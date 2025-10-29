@@ -1,30 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basic Landing Page</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- ===== Main Container ===== -->
   <div class="main-container">
-
     <header id="header">
       <a href="#">
-        <img id="header-logo" src="assets/images/logo.png" alt="Logo" class="logo">
+        <img id=" " src="assets/images/logo.png" alt="Logo" class="logo">
       </a>
       <button id="header-btn">
         Sign iin
       </button>
     </header>
-
+    
     <main class="content">
       <section class="hero">
-        <h2>Welcome!</h2>
-        <p>This is a clean and minimal landing page structure.</p>
-        <button id="action-btn" class="btn">Click Me</button>
+        <div class="hero-left">
+          <h2 class="hero-title">
+            Everything you
+            <br />
+            <svg width="225" height="30" viewBox="0 0 199 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M84.5175 1.43656C75.1684 1.92885 65.9291 2.53417 56.9193 3.19595C44.1648 4.13211 31.4153 5.10057 18.7426 6.63395C14.7536 7.11817 10.7026 7.42483 6.73848 8.03011C4.25005 8.40942 0.950447 8.95006 0.517415 9.06305C0.290922 9.12761 0.192111 9.22454 0.160182 9.25683C-0.0643157 9.4828 -0.0233531 9.70061 0.103363 9.87009C0.15425 9.94272 0.282926 10.1203 0.640127 10.1446C24.5287 11.799 48.9561 8.57083 72.8736 8.23187C114.351 7.6508 157.085 9.95894 198.233 14.9949C198.592 15.0352 198.942 14.8334 198.991 14.5348C199.051 14.2443 198.792 13.9618 198.433 13.9214C157.215 8.87744 114.411 6.56123 72.8536 7.15036C50.5634 7.46511 27.8333 10.2979 5.51222 9.32943C6.02508 9.24873 6.52798 9.16799 6.98695 9.09536C10.9351 8.49008 14.9691 8.1915 18.9422 7.70727C31.5879 6.1739 44.3115 5.20545 57.049 4.27735C72.8536 3.11521 89.3467 2.11448 105.97 1.64639C111.916 1.71903 117.843 1.79169 123.77 1.88047C136.591 2.07416 149.472 2.63909 162.264 3.39771C166.115 3.63175 169.966 3.87384 173.818 4.08367C175.095 4.1563 178.388 4.3661 178.847 4.34996C179.415 4.33382 179.525 3.94647 179.535 3.88191C179.565 3.73664 179.545 3.53487 179.266 3.36539C179.236 3.34118 179.056 3.26043 178.657 3.212C155.399 0.355082 130.565 -0.120997 105.989 0.564987C80.0675 0.266382 54.0457 0.137197 28.1895 0C27.8193 0 27.517 0.242148 27.514 0.540752C27.512 0.839357 27.8103 1.08151 28.1805 1.08958C46.9026 1.18643 65.7196 1.28322 84.5175 1.43656Z"
+                fill="#173B58" />
+            </svg>
+            <br />
+            need for teaching
+          </h2>
+          <p class="hero-para">The future's most important tool for the teacher</p>
+          <div class="hero-get-started">
+            <input type="email" placeholder="Enter your email" class="hero-get-started-input" />
+            <button class="hero-get-started-btn">
+              Get Started
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_5640_12)">
+                  <path d="M15 5L13.59 6.41L18.17 11H2V13H18.17L13.58 17.59L15 19L22 12L15 5Z" fill="#173B58" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5640_12">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <p class="hero-para-2">or Sign in with</p>
+          <div class="hero-signin">
+            <a href="#hero-signin-opt" class="hero-signin-opt">
+              <img src="./assets/images/hero/image 3.png" alt="" srcset="">
+            </a>
+            <a href="#hero-signin-opt" class="hero-signin-opt">
+              <img src="./assets/images/hero/image 4.png" alt="" srcset="">
+            </a>
+          </div>
+
+        </div>
+        <!-- Hero Right Side -->
+        <div class="hero-right">
+          <img class="hero-image" src="./assets/images/hero/hero-right-bg.png" alt="Undervisningsplan" />
+
+          <div class="hero-cards">
+            <!-- Card 1 -->
+            <div class="hero-card1">
+              <p>Essential Course For Your School syllabus Toolkit Consectetuer.</p>
+              <div class="hero-card-avtar-group">
+                <img src="./assets/images/hero/avtar.png" alt="avtar">
+                <div>
+                  <h4>Himaad Riaz</h4>
+                  <p>Principle of Amsterdam School</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="hero-card2">
+              <h3>3.75K</h3>
+              <p>Teachers & Members</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s2">
+        <h2 class="s2-title">Glimpses from the classrooms</h2>
+        <div class="s2-gallery">
+          <div class="s2-gallery-item1">
+            <img src="./assets/images/s2/item1.png" alt="Classroom 1">
+            <h4 class="s2-gallery-item1-title-card-title">Basic english learning 🔥</h4>
+
+            <div class="s2-gallery-item1-title-cards-info">
+              <div class="s2-gallery-item1-title-card-info1">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.66666 2.5H6.66666C7.55072 2.5 8.39857 2.85119 9.02369 3.47631C9.64881 4.10143 10 4.94928 10 5.83333V17.5C10 16.837 9.73661 16.2011 9.26776 15.7322C8.79892 15.2634 8.16304 15 7.5 15H1.66666V2.5Z"
+                    stroke="#EDB031" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M18.3333 2.5H13.3333C12.4493 2.5 11.6014 2.85119 10.9763 3.47631C10.3512 4.10143 10 4.94928 10 5.83333V17.5C10 16.837 10.2634 16.2011 10.7322 15.7322C11.2011 15.2634 11.837 15 12.5 15H18.3333V2.5Z"
+                    stroke="#EDB031" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                English, Norsk
+              </div>
+              <div class="s2-gallery-item1-title-card-info23">
+                <div class="s2-gallery-item1-title-card-info2">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6667 10H8.33333C8.33333 11.6667 8.33333 15 8.33333 15" stroke="#EDB031"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.6667 15H3.33334" stroke="#EDB031" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.6667 5H13.3333L13.3333 10" stroke="#EDB031" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Steps : 3
+                </div>
+                <div class="s2-gallery-item1-title-card-info3">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.99999 18.3333C14.6024 18.3333 18.3333 14.6023 18.3333 9.99996C18.3333 5.39759 14.6024 1.66663 9.99999 1.66663C5.39762 1.66663 1.66666 5.39759 1.66666 9.99996C1.66666 14.6023 5.39762 18.3333 9.99999 18.3333Z"
+                      stroke="#EDB031" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10 5V10L13.3333 11.6667" stroke="#EDB031" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  2hr
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="s2-gallery-item1-title-cards-avtar-group">
+              <img src="assets/images/s2/avtar.png" alt="" class="s2-gallery-item1-title-cards-avtar">
+              <div class="s2-gallery-item1-title-cards-avtar-info">
+                <h4 class="s2-gallery-item1-title-cards-name">Sarah William</h4>
+                <p class="s2-gallery-item1-title-cards-role">English Teacher</p>
+              </div>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_5645_75)">
+                  <rect width="30" height="30" rx="15" fill="#EDF2F7" />
+                  <path
+                    d="M15 10C16.375 10 17.5 8.875 17.5 7.5C17.5 6.125 16.375 5 15 5C13.625 5 12.5 6.125 12.5 7.5C12.5 8.875 13.625 10 15 10ZM15 12.5C13.625 12.5 12.5 13.625 12.5 15C12.5 16.375 13.625 17.5 15 17.5C16.375 17.5 17.5 16.375 17.5 15C17.5 13.625 16.375 12.5 15 12.5ZM15 20C13.625 20 12.5 21.125 12.5 22.5C12.5 23.875 13.625 25 15 25C16.375 25 17.5 23.875 17.5 22.5C17.5 21.125 16.375 20 15 20Z"
+                    fill="#173B58" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5645_75">
+                    <rect width="30" height="30" rx="15" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="s2-gallery-item2">
+            <img src="./assets/images/s2/item2.png" alt="Classroom 2">
+            <img src="./assets/images/s2/playbtn.png" alt="Play Button" class="s2-gallery-item2-playbtn">
+          </div>
+        </div>
+        <div class="s2-box">
+          <h3 class="s2-box-title">The future's most important tool for the teacher 📙</h3>
+          <p class="s2-box-para">Teaching plan gives you what you need to go out with inspiring teaching - every day.
+            Throughout the school year, you will receive weekly teaching plans for the primary, middle and junior
+            levels. You also get an overview of what is going on in schools in Norway, and access to our intuitive
+            planning tool. The professional renewal is taken care of at all stages, and everything is ready for you.</p>
+        </div>
       </section>
     </main>
 
@@ -36,4 +175,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
