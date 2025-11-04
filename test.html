@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Accordion</title>
+  <style>
+    /* ========== FAQ SECTION ========== */
+    .faq {
+      padding: 80px 15px;
+    }
+
+    .faq-boxes {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .faq-box {
+      width: 100%;
+    }
+
+    .faq-box-close {
+      border: 1px solid #EBEBEB;
+      padding: 23px 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .faq-box-open {
+      position: relative;
+      border: 1px solid #EBEBEB;
+      padding: 23px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      display: none; /* hidden by default */
+    }
+
+    .faq-box-open-top {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 23px;
+      cursor: pointer;
+    }
+
+    .faq-box-open-top .faq-box-icon {
+      background-color: #EDB031;
+    }
+
+    .faq-box-open-top .faq-box-name {
+      color: #183C59;
+    }
+
+    .faq-box-para {
+      padding-left: 10px;
+      padding-right: 23px;
+      color: #000000;
+    }
+
+    .faq-box-open-top .faq-box-icon img {
+      width: auto;
+      height: 100%;
+    }
+
+    .faq-box-name {
+      font-family: DM Sans, sans-serif;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.1px;
+    }
+
+    .faq-box-icon {
+      width: 32px;
+      height: 32px;
+      padding: 12px;
+      border-width: 1px;
+      border-radius: 30px;
+      background: #FFFFFF;
+      border: 1px solid #D3D3D3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none; /* FIX: allow clicks to pass through icon */
+    }
+
+    .faq-box-icon img {
+      width: 100%;
+      height: auto;
+    }
+
+    .faq-box-open-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="faq">
+    <div class="faq-boxes">
+
+      <!-- FAQ 1 -->
+      <div id="faq-q1" class="faq-box">
+        <div class="faq-box-close">
+          <h4 class="faq-box-name">What is the Teaching Plan?</h4>
+          <div class="faq-box-icon">
+            <img src="assets/images/faq/icons_arrow2.png" alt="">
+          </div>
+        </div>
+        <div class="faq-box-open">
+          <img class="faq-box-open-line" src="/assets/images/faq/Line.png" alt="">
+          <div class="faq-box-open-top">
+            <h4 class="faq-box-name">What is the Teaching Plan?</h4>
+            <div class="faq-box-icon">
+              <img src="assets/images/faq/icons_arrow1.png" alt="">
+            </div>
+          </div>
+          <p class="faq-box-para">
+            There are many exciting themes that are under production. At the junior level, there will be theme
+            weeks about, among other things, Astrid Lindgren, bumblebees, dinosaurs and extinct animals, "My Godfather
+            and I" and many other great themes.
+            At intermediate level, many weeks are also ready - including Harry Potter, Roald Dahl, outer space,
+            literature week and "Leaving traces".
+            The youth level will have theme weeks such as "Creator Week", "Dystopia; When democracy fails",
+            "Fantasy", "Election year 2021", "International week" and "My talent".
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div id="faq-q2" class="faq-box">
+        <div class="faq-box-close">
+          <h4 class="faq-box-name">What is meant by teacher community?</h4>
+          <div class="faq-box-icon">
+            <img src="assets/images/faq/icons_arrow2.png" alt="">
+          </div>
+        </div>
+        <div class="faq-box-open">
+          <img class="faq-box-open-line" src="/assets/images/faq/Line.png" alt="">
+          <div class="faq-box-open-top">
+            <h4 class="faq-box-name">What is meant by teacher community?</h4>
+            <div class="faq-box-icon">
+              <img src="assets/images/faq/icons_arrow1.png" alt="">
+            </div>
+          </div>
+          <p class="faq-box-para">
+            There are many exciting themes that are under production. At the junior level, there will be theme
+            weeks about, among other things, Astrid Lindgren, bumblebees, dinosaurs and extinct animals, "My Godfather
+            and I" and many other great themes.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div id="faq-q3" class="faq-box">
+        <div class="faq-box-close">
+          <h4 class="faq-box-name">Do you have any examples of theme weeks?</h4>
+          <div class="faq-box-icon">
+            <img src="assets/images/faq/icons_arrow2.png" alt="">
+          </div>
+        </div>
+        <div class="faq-box-open">
+          <img class="faq-box-open-line" src="/assets/images/faq/Line.png" alt="">
+          <div class="faq-box-open-top">
+            <h4 class="faq-box-name">Do you have any examples of theme weeks?</h4>
+            <div class="faq-box-icon">
+              <img src="assets/images/faq/icons_arrow1.png" alt="">
+            </div>
+          </div>
+          <p class="faq-box-para">
+            At intermediate level, many weeks are ready — including Harry Potter, Roald Dahl, outer space,
+            literature week and "Leaving traces".
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div id="faq-q4" class="faq-box">
+        <div class="faq-box-close">
+          <h4 class="faq-box-name">Can you tell us a little more about how the planning tool works?</h4>
+          <div class="faq-box-icon">
+            <img src="assets/images/faq/icons_arrow2.png" alt="">
+          </div>
+        </div>
+        <div class="faq-box-open">
+          <img class="faq-box-open-line" src="/assets/images/faq/Line.png" alt="">
+          <div class="faq-box-open-top">
+            <h4 class="faq-box-name">Can you tell us a little more about how the planning tool works?</h4>
+            <div class="faq-box-icon">
+              <img src="assets/images/faq/icons_arrow1.png" alt="">
+            </div>
+          </div>
+          <p class="faq-box-para">
+            The planning tool helps structure weekly teaching plans efficiently for different age groups.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div id="faq-q5" class="faq-box">
+        <div class="faq-box-close">
+          <h4 class="faq-box-name">How often are new themes added?</h4>
+          <div class="faq-box-icon">
+            <img src="assets/images/faq/icons_arrow2.png" alt="">
+          </div>
+        </div>
+        <div class="faq-box-open">
+          <img class="faq-box-open-line" src="/assets/images/faq/Line.png" alt="">
+          <div class="faq-box-open-top">
+            <h4 class="faq-box-name">How often are new themes added?</h4>
+            <div class="faq-box-icon">
+              <img src="assets/images/faq/icons_arrow1.png" alt="">
+            </div>
+          </div>
+          <p class="faq-box-para">
+            New themes are released continuously throughout the year to keep lessons fresh and engaging.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faqBoxes = document.querySelectorAll(".faq-box");
+
+      faqBoxes.forEach((box) => {
+        const closeSection = box.querySelector(".faq-box-close");
+        const openSection = box.querySelector(".faq-box-open");
+        const openTop = box.querySelector(".faq-box-open-top");
+
+        // hide initially
+        openSection.style.display = "none";
+
+        // click anywhere in header (including icon)
+        closeSection.addEventListener("click", () => {
+          const isOpen = openSection.style.display === "block";
+
+          faqBoxes.forEach((b) => {
+            b.querySelector(".faq-box-open").style.display = "none";
+            b.querySelector(".faq-box-close").style.display = "flex";
+          });
+
+          if (!isOpen) {
+            openSection.style.display = "block";
+            closeSection.style.display = "none";
+          }
+        });
+
+        // close when open header clicked
+        openTop.addEventListener("click", () => {
+          openSection.style.display = "none";
+          closeSection.style.display = "flex";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
